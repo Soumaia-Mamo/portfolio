@@ -1,0 +1,36 @@
+body {
+  background-image: url('../foto/bg.jpg');
+  width: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80%;
+}
+.muziek-title{
+  color:gray ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 20%;
+  font-size: 50px;
+}
+.audio_div{
+  border: gray 10px ;
+  padding : 20px ;
+  border-style: groove;
+  margin : 20px ;
+  width: 30%;
+  float:left ;
+}
+h2 {
+  color:black;
+}
+strong {
+  color : red ;
+}
+audio {
+  margin: 20px;
+  margin-left: 17%;
+  outline: none;
+}
+.audio_img{
+  margin-left: 20%;
+  border-radius: 50%;
+}

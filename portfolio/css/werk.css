@@ -1,0 +1,134 @@
+body{
+  background-color: #363334 ;
+}
+#video-achter {
+  position: fixed;
+  right: 0;
+  bottom: 160px;
+  min-width: 100%;
+  min-height: 50%;
+}
+.title {
+  position: fixed;
+  bottom: 700px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width:100%;
+  padding: 20px;
+font-size: 30px;
+}
+#myBtn {
+  width: 100px;
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  }
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+.werk-div{
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50%;
+  color:white ;
+}
+.werk-title{
+color: gray;
+font-size:40px;
+position: relative;
+
+}
+hr{
+width: 50%;
+  text-align: center;
+}
+
+p{
+  width: 50%;
+margin-left: 25%;  position: relative;
+
+}
+form{
+ margin-left: 90%;
+}
+
+
+.demo a {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	z-index: 2;
+	display: inline-block;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	color: #fff;
+	font: normal 400 20px/1 "Josefin Sans", sans-serif;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	transition: opacity 0.3s;
+}
+.demo a:hover {
+	opacity: 0.5;
+}
+
+#rol a {
+	padding-top: 80px;
+}
+#rol a span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-animation: sdb07 2s infinite;
+	animation: sdb07 2s infinite;
+	opacity: 0;
+	box-sizing: border-box;
+}
+#rol a span:nth-of-type(1) {
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+}
+#rol a span:nth-of-type(2) {
+	top: 16px;
+	-webkit-animation-delay: 0.15s;
+	animation-delay: 0.15s;
+}
+#rol a span:nth-of-type(3) {
+	top: 32px;
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+@-webkit-keyframes sdb07 {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes sdb07 {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
