@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="nl">
+  <head>
+    
+    <title>contact</title>
+    <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../css/contact.css"/>
+      <link rel="stylesheet" type="text/css" href="../css/terug_button.css"/>
+      <link rel="stylesheet" type="text/php" href="../form.php"/>
+      <link rel="stylesheet" type="text/css" href="../css/scroll.css"/>
+    </head>
+<body> 
+  <!-- //formulier// -->
+     <form class="terug_button">
+        <input  class="btn red" type="button" value="Terug" onclick="history.back()">
+     </form>
+         <img id="img" src="../foto/contact-us-2.png" alt="contact image">
+         <h1 id="contact-title">Contact opnemen</h1>
+      <div class="contact-form-image-container">
+    <div class="contact-form-container">
+        <form class="contact-form" action="form.php" method="post">  
+            <label id="head"></label>
+            <br/>
+            <input type="radio" class="data" name="data" value="Heer">
+            <label class="head" for="Heer">Heer</label><br/>
+            <input type="radio" class="data" name="data" value="Mevrouw">
+            <label class="head" for="mevrouw">Mevrouw</label><br/>
+            <input type="radio" class="other" name="data" value="Anders ">
+            <label class="head" for="Anders">Anders </label> <br/>
+            <br/>
+            <label class="head" for="voornaam">voornaam:</label><br/>
+            <input type="text" id="voornaam" class="input" name="voornaam" placeholder="Voer uw voornaam in"><br/>
+            <label class="head" for="achternaam">achternaam:</label><br>
+            <input type="text" id="achternaam" class="input" name="achternaam" placeholder="Voer uw achternaam in"> 
+            <br/>
+            <label class="head" for="email">E-mail adres:<br/></label>
+            <input type="email"  id="email" class="input" name="email" placeholder="Voer uw e-mailadres in">
+            <br/>
+            <label class="head" for="bericht">Uw bericht :</label>
+            <br/>
+            <textarea id="bericht" name="bericht" rows="4" cols="30"> Schrijf hier uw bericht . 
+            </textarea>
+            <br/>
+            <br/>
+            <div id="button">
+            <button type="submit" value="verzenden">Submit</button>
+            <button type="reset" value="Reset">Reset</button>
+            </div>
+        </div>
+          </form>
+        <div class="contact-image-container">
+           <img id="contact-img" src="../foto/contact-bg.jpeg" alt="contact image"><br/> 
+        </div>
+         </div>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="nl">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/spel.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/terug_button.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/scroll.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/werk.css"/>
+
+    <title>werk</title>
+    <meta charset="utf-8">
+   
+    </head>
+  <body>
+    <!-- // video achtergrond// -->
+    <video autoplay muted loop id="video-achter">
+       <source src="../video/office.mp4" type="video/mp4">
+    </video>
+
+  
+  <div class="title">
+
+    <form class="terug_button">
+      <input  class="btn red" type="button" value="Terug" onclick="history.back()">
+     </form>
+  
+    <h1>Mijn werk ervaring</h1> 
+     <button id="myBtn" onclick="play_pause()" type="button">pauze</button>
+  </div>
+<script>
+    var play_pause_status = "play";
+  function play_pause() {
+     var video_screen = document.getElementById('video-achter');
+  if (play_pause_status == "pause") {
+      video_screen.play();
+      play_pause_status = "play";
+  } else {
+      video_screen.pause();
+      play_pause_status = "pause";
+  }
+  }    
+
+  $(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+    });
+    </script>
+   <section id="rol" class="demo">
+
+  <a href="#werk-div1"><span></span><span></span><span></span>rol</a>
+
+<div class="werk-div">
+  <div id="werk-div1">
+<h2 class="werk-title">Catering syrisch eten</h2> <h5>2014-2015</h5>
+<p>ik heb anderhalf jaar met koken gewerkt, het was een goede ervaring voor mij, 
+ik heb ervan geleerd hoe ik met tijd moet omgaan, want bij het koken is de tijd zo belangrijk, 
+zoals wanneer de bestelling moet worden gedaan en ik heb geleerd onder druk te werken</p></div>
+<hr>
+
+<div id ="werk-div2">
+<h2 class="werk-title">Online winkel in nederland</h2> <h5>2018-2019</h5>
+<p>in 2018 istablished ik mijn eigen project , Mijn project was een online winkel voor Syrische producten in Nederland ,
+  ik heb er twee jaar aan gewerkt, door deze ervaring heb ik geleerd hoe je de rekeningen en betalingen 
+  moet organiseren en hoe je je bedrijf moet beheren</p>
+</div>
+     </div> 
+  </body>
+    </html>

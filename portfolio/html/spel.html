@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="nl">
+  <head>
+    
+    <title>spel</title>
+    <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../css/spel.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/terug_button.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/scroll.css"/>
+
+
+    </head>
+    <body>
+      <form class="terug_button">
+        <input  class="btn red" type="button" value="Terug" onclick="history.back()">
+       </form>
+
+      <h1 id="spel-title">Rock-Paper-Scissors</h1>
+
+   <img class="spel-img" src="../foto/spel-background.jpg" width="450px" alt="spel img"/>
+   <img class="spel-img" src="../foto/spel-center-img.png" width="890px" alt="spel img"/>
+   <img  class="spel-img" src="../foto/spel-background.jpg" width="450px" alt="spel img"/>
+
+      <form class="content">
+      
+        <input type="radio" id="rock-rock" name="rock-paper-scissors">
+        <input type="radio" id="rock-paper" name="rock-paper-scissors">
+        <input type="radio" id="rock-scissors" name="rock-paper-scissors">
+        <input type="radio" id="paper-rock" name="rock-paper-scissors">
+        <input type="radio" id="paper-paper" name="rock-paper-scissors">
+        <input type="radio" id="paper-scissors" name="rock-paper-scissors">
+        <input type="radio" id="scissors-rock" name="rock-paper-scissors">
+        <input type="radio" id="scissors-paper" name="rock-paper-scissors">
+        <input type="radio" id="scissors-scissors" name="rock-paper-scissors">
+      
+        <div>
+          <div id="hands">
+            <div class="hand" id="computer-hand">
+              <div class="fist"></div>
+              <div class="finger finger-1"></div>
+              <div class="finger finger-2"></div>
+              <div class="finger finger-3"></div>
+              <div class="finger finger-4"></div>
+              <div class="thumb"></div>
+              <div class="arm"></div>
+            </div>
+      
+            <div class="hand" id="user-hand">
+              <div class="fist"></div>
+              <div class="finger finger-1"></div>
+              <div class="finger finger-2"></div>
+              <div class="finger finger-3"></div>
+              <div class="finger finger-4"></div>
+              <div class="thumb"></div>
+              <div class="arm"></div>
+            </div>
+            
+            <div id="icons">
+              <div>
+                <label for="rock-rock">✊</label>
+                <label for="paper-rock">✊</label>
+                <label for="scissors-rock">✊</label>
+              </div>
+              <div>
+                <label for="rock-paper">🖐️</label>
+                <label for="paper-paper">🖐️</label>
+                <label for="scissors-paper">🖐️</label>
+              </div>
+              <div>
+                <label for="rock-scissors">✌</label>
+                <label for="paper-scissors">✌</label>
+                <label for="scissors-scissors">✌</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div id="message">
+          <h2></h2>
+          <input type="reset" value="Nieuwe ronde" />
+        </div>
+      
+      </form>
+  
+    </body>
+      </html>
